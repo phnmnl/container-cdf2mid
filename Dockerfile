@@ -1,6 +1,6 @@
 # PhenoMeNal H2020
 
-FROM container-registry.phenomenal-h2020.eu/phnmnl/rbase:v3.4.1-1xenial0_cv0.2.12
+FROM container-registry.phenomenal-h2020.eu/phnmnl/rbase:dev_v3.4.3-1xenial0_cv0.3.16
 
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
@@ -13,7 +13,7 @@ LABEL documentation="https://github.com/phnmnl/container-cdf2mid/blob/master/REA
 LABEL license="https://github.com/phnmnl/container-cdf2mid/blob/develop/License.txt"
 LABEL tags="Metabolomics"
 
-ENV cdf2mid_REVISION "87d6cc39bff894fe4f9cee2f21950463b401b4a0"
+ENV cdf2mid_REVISION "50ee579c946cb2f74f6a193e87b8bc3bd24c3595"
 
 # Setup package repos
 RUN apt-get -y update && apt-get -y --no-install-recommends install r-base-dev libssl-dev \
