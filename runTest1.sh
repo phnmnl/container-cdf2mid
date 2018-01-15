@@ -19,4 +19,4 @@ if [ ! -f cdf2midout.csv ]; then
    	exit 1
 fi
 
-echo "ramid runs with test data without error codes, all expected files created."
+echo "cdf2mid runs with test data without error codes, all expected files created."
