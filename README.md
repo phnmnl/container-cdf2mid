@@ -93,9 +93,7 @@ The working directory could be any directory in the used computer, it is named f
 ```
 docker run -it --entrypoint=runTest1.sh cdf2mid:0.1 
 ```
-The format of input data description
-
-    The input data description file (here "metdata") contains the additional information prepared by the data provider that is necessary for the analysis and for the output table to write in the format accepted as exchangeable with the Metabolights database. It should contain four main parts: (i) list of metabolites of interest, which spectra should be extracted from the provided CDF files, (ii) list of substrates with artificially introduced tracers (13C atoms), which were used to label intracellular metabolites in the given series of experiments, (iii) list of timepoints during cells incubation, where the measurements of labeling were performed, (iv) list of conditions (cell types) whose data are presented in the CDF files, but which should be analyzed separately.
+The format of input data description. The input data description file (here "metdata") contains the additional information prepared by the data provider that is necessary for the analysis and for the output table to write in the format accepted as exchangeable with the Metabolights database. It should contain four main parts: (i) list of metabolites of interest, which spectra should be extracted from the provided CDF files, (ii) list of substrates with artificially introduced tracers (13C atoms), which were used to label intracellular metabolites in the given series of experiments, (iii) list of timepoints during cells incubation, where the measurements of labeling were performed, (iv) list of conditions (cell types) whose data are presented in the CDF files, but which should be analyzed separately.
 
 These parts are labeled by the keywords: "metabs", "tracer", "inctime", "cells". These keywords should not be changed, az well as the words list(), c().
 
