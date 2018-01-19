@@ -1,0 +1,2 @@
+which runcdf2mid.R
+which Rscript

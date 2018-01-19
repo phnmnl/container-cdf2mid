@@ -1,19 +1,16 @@
-# PhenoMeNal H2020
+FROM container-registry.phenomenal-h2020.eu/phnmnl/rbase:v3.4.3-1xenial0_cv0.3.17
 
-FROM container-registry.phenomenal-h2020.eu/phnmnl/rbase:v3.4.1-1xenial0_cv0.2.12
-
-MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
-
-LABEL version="1.0"
+LABEL maintainer="PhenoMeNal-H2020 Project (phenomenal-h2020-users@googlegroups.com)"
+LABEL version="0.3"
 LABEL software.version="1.0"
 LABEL software="cdf2mid"
-LABEL description="Evaluates the peaks of mass isotopomer distribution (MID), making them ready for correction for natural isotope occurrence."
+LABEL description="Reads CDF files containing multiple mass spectra of 13C-labeled metabolites, and write the extracted spectra in a format exchangeable with Metabilights database."
 LABEL website="https://github.com/seliv55/cdf2mid"
 LABEL documentation="https://github.com/phnmnl/container-cdf2mid/blob/master/README.md"
-LABEL license="https://github.com/phnmnl/container-cdf2mid/blob/develop/License.txt"
+LABEL license="https://github.com/phnmnl/container-cdf2mid/blob/master/License.txt"
 LABEL tags="Metabolomics"
 
-ENV cdf2mid_REVISION "87d6cc39bff894fe4f9cee2f21950463b401b4a0"
+ENV cdf2mid_REVISION "a52acefcf42604e145fde70e55d65d6fd3995761"
 
 # Setup package repos
 RUN apt-get -y update && apt-get -y --no-install-recommends install r-base-dev libssl-dev \
