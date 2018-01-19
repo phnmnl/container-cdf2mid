@@ -45,7 +45,7 @@ The functions performed by CDF2MID are similar to those of RaMID (https://github
 ## Container Contributors
 
 - [Vitaly Selivanov](https://github.com/seliv55) (Universitat de Barcelona)
-- [Pablo Moreno](https://github.com/pcm32) 
+- [Pablo Moreno](https://github.com/pcm32) (EMBL-EBI) 
 
 ## Website
 
