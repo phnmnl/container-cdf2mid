@@ -20,8 +20,8 @@ The functions performed by CDF2MID are similar to those of RaMID (https://github
 
 ## Functionality
 
-- Preprocessing of raw data
-- initiation of workflows
+- Workflows
+- Data Management
 
 ## Approaches
 
@@ -31,12 +31,6 @@ The functions performed by CDF2MID are similar to those of RaMID (https://github
 
 - MS
 - GC-MS
-
-## Screenshots
-
-- screenshot of input data (format Metabolights), output is the same format with one more column added: corrected mass spectrum
-
-![screenshot]()
 
 ## Tool Authors
 

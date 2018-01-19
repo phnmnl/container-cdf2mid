@@ -1,10 +1,6 @@
-# PhenoMeNal H2020
+FROM container-registry.phenomenal-h2020.eu/phnmnl/rbase:v3.4.3-1xenial0_cv0.3.17
 
-FROM container-registry.phenomenal-h2020.eu/phnmnl/rbase:dev_v3.4.3-1xenial0_cv0.3.16
-
-MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
-
-LABEL maintainer="PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )"
+LABEL maintainer="PhenoMeNal-H2020 Project (phenomenal-h2020-users@googlegroups.com)"
 LABEL version="0.3"
 LABEL software.version="1.0"
 LABEL software="cdf2mid"
