@@ -2,12 +2,13 @@
 
 apt-get update -y && apt-get install -y --no-install-recommends wget ca-certificates zip
 
-wget "https://drive.google.com/uc?export=donwload&id=1FHlrPdWjjCtO8SfTycdPGfhdtv3iaQqB" -O metdata 
+#wget "https://drive.google.com/uc?export=donwload&id=1FHlrPdWjjCtO8SfTycdPGfhdtv3iaQqB" -O metdata 
+wget "https://drive.google.com/uc?export=donwload&id=1DwOurqYFbZD4RJSSLmyONYxzxDMlLo8Y" -O simetdat 
 wget "https://drive.google.com/uc?export=donwload&id=1KxisW75gvZuN9lDVa3Q2wdnhZqMOL0mF" -O roldan.zip
 
 unzip roldan.zip -d data
 
-runcdf2mid.R -i metdata -o cdf2midout.csv -z data
+runcdf2mid.R -i simetdat -z data/ -o cdf2midout.csv
 rc=$?; 
 if [[ $rc != 0 ]]; then 
 	echo "R process failed with error $rc"
