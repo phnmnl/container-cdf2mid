@@ -80,7 +80,7 @@ docker run -it -v $PWD:/data container-registry.phenomenal-h2020.eu/phnmnl/cdf2m
 - To run cdf2mid as a docker image created locally:
 
 ```
-docker run -it -v $PWD:/data cdf2mid -i /data/metdata -o /data/cdf2midout.csv -z /data/wd
+docker run -it -v $PWD:/data cdf2mid -i /data/metdata -z /data/wd/ -o /data/cdf2midout.csv
 ```
 The working directory could be any directory in the used computer, it is named for the docker image as "/data". It should contain: i) an input data description (in the presented example in the file "metdata"), and ii) a directory containing CDF file (here "/wd"). The output is provided as CSV table in the format exchangeable with Metabolights. It can have any name, here it is named "cdf2midout.csv". Whereas the output file is generated automatically and do not require any specific explanation, the first and the last parameters, the format of input data description (here "metdata") and the convention for CDF file names do require explanations, although thes formats made maximally simple for the data provider. They are described below.
 
