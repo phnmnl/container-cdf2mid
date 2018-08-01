@@ -59,7 +59,7 @@ For advanced Docker usage:
 - Create container from dockerfile:
 
 ```
-docker build -t cdf2mid .
+sudo docker build -t cdf2mid .
 ```
 
 Alternatively, pull from repo:
@@ -80,14 +80,14 @@ docker run -it -v $PWD:/data container-registry.phenomenal-h2020.eu/phnmnl/cdf2m
 - To run cdf2mid as a docker image created locally:
 
 ```
-docker run -it -v $PWD:/data cdf2mid -i /data/metdata -z /data/wd/ -o /data/cdf2midout.csv
+sudo docker run -it -v $PWD:/data cdf2mid -i /data/metdata -z /data/wd/ -o /data/cdf2midout.csv
 ```
 The working directory could be any directory in the used computer, it is named for the docker image as "/data". It should contain: i) an input data description (in the presented example in the file "metdata"), and ii) a directory containing CDF file (here "/wd"). The output is provided as CSV table in the format exchangeable with Metabolights. It can have any name, here it is named "cdf2midout.csv". Whereas the output file is generated automatically and do not require any specific explanation, the first and the last parameters, the format of input data description (here "metdata") and the convention for CDF file names do require explanations, although thes formats made maximally simple for the data provider. They are described below.
 
 - run test1 using the test data (available for reference in [this Google Drive folder](https://drive.google.com/drive/folders/17dBkItF19KjT4b_3-9j6yGMJVcQIWonJ)).
  
 ```
-docker run -it --entrypoint=runTest1.sh cdf2mid:0.1 
+sudo docker run -it --entrypoint=runTest1.sh cdf2mid
 ```
 The format of input data description. The input data description file (here "metdata") contains the additional information prepared by the data provider that is necessary for the analysis and for the output table to write in the format accepted as exchangeable with the Metabolights database. It should contain four main parts: (i) list of metabolites of interest, which spectra should be extracted from the provided CDF files, (ii) list of substrates with artificially introduced tracers (13C atoms), which were used to label intracellular metabolites in the given series of experiments, (iii) list of timepoints during cells incubation, where the measurements of labeling were performed, (iv) list of conditions (cell types) whose data are presented in the CDF files, but which should be analyzed separately.
 
